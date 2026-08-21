@@ -1,89 +1,80 @@
 <div align="center">
 
-<!-- ✨ Animated Futuristic Banner (Dark / Light support) ✨ -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./david-banner.svg?v=2">
-  <source media="(prefers-color-scheme: light)" srcset="./david-banner-light.svg?v=2">
-  <img src="./david-banner.svg?v=2" alt="David HE — Full-Stack &amp; AI Architect" width="100%"/>
-</picture>
+<!-- ✨ Animated Banner ✨ -->
+<img src="./david-banner.svg" alt="David HE — Full-Stack &amp; AI Architect" width="100%"/>
 
 </div>
 
-<br/>
+---
 
-<table align="center" border="0">
+<table>
 <tr>
-<td width="36%" align="center" valign="middle">
+<td width="35%" align="center" valign="top">
 
-<!-- 🪪 Swinging Lanyard ID Card (Pure SVG with realistic physics animation) -->
-<img src="./david-lanyard.svg?v=2" alt="David HE ID badge" width="300"/>
+<img src="./david-lanyard.svg" alt="David HE ID badge" width="280"/>
 
 </td>
-<td width="64%" valign="middle">
+<td width="65%" valign="top">
 
-### ⚡ Core Focus &amp; Architecture
+### ⚡ Core Focus & Architecture
 
-| 🚀 Focus Area | 🛠️ Core Technologies |
+| 🚀 Area | 🛠️ Technologies |
 |:---|:---|
-| 🏗️ **Backend Architecture** | `C#` `ASP.NET Core` `Clean Arch` |
-| 🧠 **AI &amp; Deep Learning** | `Python` `PyTorch` `TensorFlow` |
-| 🗄️ **Data Architecture** | `SQL Server` `MongoDB` `Redis` |
-| 🐳 **Cloud &amp; DevOps** | `Docker` `CI/CD` `Linux` |
-| ⚡ **System Optimization** | `High Concurrency` `Low Latency` |
+| 🏗️ **Backend** | `C#` · `ASP.NET Core` · `Clean Arch` |
+| 🧠 **AI / ML** | `Python` · `PyTorch` · `TensorFlow` |
+| 🗄️ **Data** | `SQL Server` · `MongoDB` · `Redis` |
+| 🐳 **DevOps** | `Docker` · `CI/CD` · `Linux` |
+| ⚡ **Performance** | `High Concurrency` · `Low Latency` |
 
 <br/>
 
 > 💡 *"Discipline over motivation. Systems over shortcuts."*
 
+<br/>
+
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/davidhevn)
+[![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=flat-square&logo=facebook&logoColor=white)](https://www.facebook.com/hoang.snguyens.589583/)
+[![X](https://img.shields.io/badge/X-000000?style=flat-square&logo=x&logoColor=white)](https://x.com/nguyendaihoangg)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com)
+
 </td>
 </tr>
 </table>
 
-<br/>
+---
 
 <div align="center">
 
-### 📊 Engineering Stats &amp; Performance
+### 📊 Engineering Stats
 
-<img src="./david-stats.svg?v=2" alt="GitHub Stats" height="185"/>
-<img src="./david-langs.svg?v=2" alt="Top Languages" height="185"/>
-
-<br/><br/>
-
-<!-- 🔥 Contribution Streak -->
-<img src="https://streak-stats.demolab.com?user=davidhevn&theme=radical&hide_border=true&background=0f172a&ring=38bdf8&fire=818cf8&currStreakLabel=c084fc" alt="GitHub Streak"/>
+<img src="./david-stats.svg" alt="GitHub Stats" height="180"/>
+&nbsp;&nbsp;
+<img src="./david-langs.svg" alt="Top Languages" height="180"/>
 
 <br/><br/>
 
-<!-- 📈 Contribution Activity Graph -->
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=davidhevn&bg_color=0f172a&color=38bdf8&line=818cf8&point=c084fc&area=true&area_color=818cf8&hide_border=true&custom_title=Contribution%20Graph%20🚀" alt="Contribution graph" width="95%"/>
+[![GitHub Streak](https://streak-stats.demolab.com?user=davidhevn&theme=radical&hide_border=true&background=0f172a&ring=38bdf8&fire=818cf8&currStreakLabel=c084fc)](https://git.io/streak-stats)
 
 <br/><br/>
 
-<!-- 🏆 Trophies (Local animated SVG) -->
-<img src="./david-trophies.svg?v=2" alt="Trophies" width="95%"/>
+[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=davidhevn&bg_color=0f172a&color=38bdf8&line=818cf8&point=c084fc&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
 <br/><br/>
 
-### 🐍 Watch the snake eat my contributions
-
-<img src="https://raw.githubusercontent.com/davidhevn/davidhevn/output/github-snake-cyan.svg" alt="Contribution snake"/>
+<img src="./david-trophies.svg" alt="Trophies" width="90%"/>
 
 <br/><br/>
 
-### 📫 Let's Connect
+### 🐍 Contribution Snake
 
-<a href="https://github.com/davidhevn"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
-<a href="https://www.facebook.com/hoang.snguyens.589583/"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook"/></a>
-<a href="https://x.com/nguyendaihoangg"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X (Twitter)"/></a>
-<a href="https://linkedin.com"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+![Snake](https://raw.githubusercontent.com/davidhevn/davidhevn/output/github-snake-cyan.svg)
 
-<br/><br/>
+<br/>
 
-<img src="https://komarev.com/ghpvc/?username=davidhevn&color=38bdf8&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile views"/>
+![Profile Views](https://komarev.com/ghpvc/?username=davidhevn&color=38bdf8&style=flat-square&label=Profile+Views)
 
-<br/><br/>
+<br/>
 
-*⚡ If it can be optimized, automated, or made smarter — I’m in.* 🚀
+*⚡ If it can be optimized, automated, or made smarter — I'm in.* 🚀
 
 </div>

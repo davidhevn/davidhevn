@@ -8,12 +8,12 @@ text{font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,-apple-system
 @keyframes floaty2{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-10px) rotate(3deg)}}
 @keyframes twinkle{0%,100%{opacity:0.3;transform:scale(0.6)}50%{opacity:1;transform:scale(1.1)}}
 @keyframes rise{0%{transform:translateY(0);opacity:0}15%{opacity:.7}85%{opacity:.7}100%{transform:translateY(-50px);opacity:0}}
-.pill{transition:transform .2s ease,filter .2s ease;transform-box:fill-box;transform-origin:center;cursor:pointer}
+.pill{transition:transform .2s ease,filter .2s ease;transform-origin: 45px 15px;cursor:pointer}
 .pill:hover{transform:scale(1.08);filter:brightness(1.08)}
 .cur{animation:blink 1s step-end infinite}
-.tw{transform-box:fill-box;transform-origin:center;animation:twinkle 2.6s ease-in-out infinite}
+.tw{transform-origin: 45px 15px;animation:twinkle 2.6s ease-in-out infinite}
 .fl{animation:floaty 5s ease-in-out infinite}
-.fl2{transform-box:fill-box;transform-origin:center;animation:floaty2 4.5s ease-in-out infinite}
+.fl2{transform-origin: 45px 15px;animation:floaty2 4.5s ease-in-out infinite}
 .rp{animation:rise linear infinite}
 .sep{stroke:#cbd5e1;stroke-width:1;opacity:.8}
 ]]></style>
@@ -138,7 +138,7 @@ text{font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,-apple-system
 </g>
 
 <!-- ================= RIGHT: TECH GRAPHIC ================= -->
-<g transform="translate(930,355)" class="fl">
+<g transform="translate(930,355)"><g class="fl">
   <!-- Glowing circle base -->
   <circle cx="0" cy="0" r="220" fill="url(#orbCyan)"><animate attributeName="r" values="220;240;220" dur="5s" repeatCount="indefinite"/></circle>
   
@@ -197,19 +197,18 @@ text{font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,-apple-system
   </g>
 
   <!-- Floating Tech Badges -->
-  <g class="fl2" transform="translate(130,-130)">
+  <g transform="translate(130,-130)"><g class="fl2">
     <rect x="0" y="0" width="80" height="28" rx="8" fill="#ffffff" stroke="#0284c7" stroke-width="1.5" filter="url(#glow)"/>
     <text x="40" y="18" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#0284c7">⚡ C# .NET</text>
-  </g>
+  </g></g>
   
-  <g class="fl2" transform="translate(-180,120)">
+  <g transform="translate(-180,120)"><g class="fl2">
     <rect x="0" y="0" width="90" height="28" rx="8" fill="#ffffff" stroke="#6366f1" stroke-width="1.5" filter="url(#glow)"/>
     <text x="45" y="18" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#6366f1">🧠 PyTorch</text>
-  </g>
+  </g></g>
 
-  <g class="fl2" transform="translate(120,130)">
+  <g transform="translate(120,130)"><g class="fl2">
     <rect x="0" y="0" width="94" height="28" rx="8" fill="#ffffff" stroke="#16a34a" stroke-width="1.5" filter="url(#glow)"/>
     <text x="47" y="18" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#16a34a">🚀 Scalability</text>
-  </g>
-</g>
-</svg>
+  </g></g>
+</g></g></svg>
