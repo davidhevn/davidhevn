@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 232" width="500" height="232" role="img" aria-label="David HE's GitHub &amp; Engineering stats">
+<defs><style><![CDATA[
+text{font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,-apple-system,BlinkMacSystemFont,sans-serif}
+@keyframes fadeSlide{from{opacity:0;transform:translateX(-14px)}to{opacity:1;transform:translateX(0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes rankPulse{0%,100%{opacity:.85}50%{opacity:1}}
+@keyframes shineX{0%{transform:translateX(-160px) skewX(-15deg)}60%,100%{transform:translateX(560px) skewX(-15deg)}}
+.row{opacity:0;animation:fadeSlide .5s ease forwards}
+.rk{animation:rankPulse 2.4s ease-in-out infinite}
+.sh{animation:shineX 4.5s ease-in-out 2.4s infinite}
+]]></style>
+<linearGradient id="tg" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0%"><animate attributeName="stop-color" values="#38bdf8;#818cf8;#c084fc;#38bdf8" dur="6s" repeatCount="indefinite"/></stop>
+  <stop offset="100%"><animate attributeName="stop-color" values="#c084fc;#38bdf8;#818cf8;#c084fc" dur="6s" repeatCount="indefinite"/></stop>
+</linearGradient>
+<linearGradient id="ringg" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0%" stop-color="#38bdf8"/><stop offset="100%" stop-color="#818cf8"/>
+</linearGradient>
+<linearGradient id="shg" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#fff" stop-opacity="0"/><stop offset="50%" stop-color="#fff" stop-opacity=".07"/><stop offset="100%" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<clipPath id="cc"><rect x="1" y="1" width="498" height="230" rx="14"/></clipPath>
+<filter id="g"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+
+<rect x="1" y="1" width="498" height="230" rx="14" fill="#0f172a" stroke="url(#tg)" stroke-width="1.5"/>
+<text x="24" y="38" font-size="16" font-weight="bold" fill="url(#tg)">⚡ David HE's Engineering Stats</text>
+
+  <g class="row" style="animation-delay:0.50s">
+    <text x="24" y="74" font-size="14">⭐</text>
+    <text x="52" y="74" font-size="13.5" fill="#cbd5e1">Total Stars Earned:</text>
+    <text x="316" y="74" text-anchor="end" font-size="14" font-weight="bold" fill="#fde047">50+</text>
+  </g>
+  <g class="row" style="animation-delay:0.72s">
+    <text x="24" y="105" font-size="14">💻</text>
+    <text x="52" y="105" font-size="13.5" fill="#cbd5e1">Total Commits:</text>
+    <text x="316" y="105" text-anchor="end" font-size="14" font-weight="bold" fill="#7dd3fc">1,200+</text>
+  </g>
+  <g class="row" style="animation-delay:0.94s">
+    <text x="24" y="136" font-size="14">📦</text>
+    <text x="52" y="136" font-size="13.5" fill="#cbd5e1">Public Repos:</text>
+    <text x="316" y="136" text-anchor="end" font-size="14" font-weight="bold" fill="#4ade80">15+</text>
+  </g>
+  <g class="row" style="animation-delay:1.16s">
+    <text x="24" y="167" font-size="14">🧠</text>
+    <text x="52" y="167" font-size="13.5" fill="#cbd5e1">AI Models Deployed:</text>
+    <text x="316" y="167" text-anchor="end" font-size="14" font-weight="bold" fill="#c084fc">10+</text>
+  </g>
+  <g class="row" style="animation-delay:1.38s">
+    <text x="24" y="198" font-size="14">🏗️</text>
+    <text x="52" y="198" font-size="13.5" fill="#cbd5e1">System Architecture:</text>
+    <text x="316" y="198" text-anchor="end" font-size="14" font-weight="bold" fill="#38bdf8">High-Scale</text>
+  </g>
+
+<!-- Rank ring -->
+<g transform="translate(408,138)">
+  <circle r="52" fill="none" stroke="#1e293b" stroke-width="9"/>
+  <circle r="52" fill="none" stroke="url(#ringg)" stroke-width="9" stroke-linecap="round"
+    stroke-dasharray="254.8 326.7" stroke-dashoffset="254.8" transform="rotate(-90)">
+    <animate attributeName="stroke-dashoffset" from="254.8" to="0" dur="1.6s" begin=".6s" fill="freeze" calcMode="spline" keySplines=".2 .8 .3 1"/>
+  </circle>
+  <text class="rk" y="14" text-anchor="middle" font-size="36" font-weight="900" fill="#38bdf8" filter="url(#g)">S+</text>
+  <text y="76" text-anchor="middle" font-size="10.5" font-weight="700" fill="#94a3b8" opacity="0" style="animation:fadeIn .5s ease 1.8s forwards">RANK</text>
+</g>
+
+<g clip-path="url(#cc)"><rect class="sh" x="0" y="0" width="100" height="232" fill="url(#shg)" transform="skewX(-15)"/></g>
+</svg>
