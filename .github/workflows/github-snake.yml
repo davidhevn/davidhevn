@@ -23,7 +23,9 @@ jobs:
           github_user_name: davidhevn
           outputs: |
             dist/github-snake.svg?palette=github-dark
-            dist/github-snake-cyan.svg?color_snake=#38bdf8&color_dots=#1e1e2e,#313244,#45475a,#89b4fa,#38bdf8
+            dist/github-snake-cyan.svg?color_snake=#38bdf8&color_dots=#0f172a,#1e3a8a,#0284c7,#38bdf8,#a5f3fc
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Push snake to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
