@@ -3,19 +3,13 @@
 <defs>
 <style type="text/css"><![CDATA[
 text{font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,-apple-system,BlinkMacSystemFont,sans-serif}
-@keyframes fadeIn{from{opacity:0}to{opacity:1}}
-@keyframes popIn{0%{opacity:0;transform:translateY(14px) scale(.7)}70%{opacity:1;transform:translateY(-3px) scale(1.06)}100%{opacity:1;transform:translateY(0) scale(1)}}
 @keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
-@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
-@keyframes floaty2{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-12px) rotate(4deg)}}
-@keyframes pulseGlow{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
-@keyframes twinkle{0%,100%{opacity:0;transform:scale(.4)}50%{opacity:1;transform:scale(1)}}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes floaty2{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-10px) rotate(3deg)}}
+@keyframes twinkle{0%,100%{opacity:0.3;transform:scale(0.6)}50%{opacity:1;transform:scale(1.1)}}
 @keyframes rise{0%{transform:translateY(0);opacity:0}15%{opacity:.7}85%{opacity:.7}100%{transform:translateY(-50px);opacity:0}}
-@keyframes scanline{0%{transform:translateY(-100%)}100%{transform:translateY(100%)}}
-.ltr{opacity:0;animation:popIn .5s cubic-bezier(.2,.8,.3,1.3) forwards;transform-box:fill-box;transform-origin:center bottom}
-.ii,.pill,.st,.cl{opacity:0}
 .pill{transition:transform .2s ease,filter .2s ease;transform-box:fill-box;transform-origin:center;cursor:pointer}
-.pill:hover{transform:scale(1.08);filter:brightness(1.4)}
+.pill:hover{transform:scale(1.08);filter:brightness(1.3)}
 .cur{animation:blink 1s step-end infinite}
 .tw{transform-box:fill-box;transform-origin:center;animation:twinkle 2.6s ease-in-out infinite}
 .fl{animation:floaty 5s ease-in-out infinite}
@@ -51,17 +45,11 @@ text{font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,-apple-system
   <circle cx="18" cy="18" r=".7" fill="rgba(129,140,248,0.15)"/>
 </pattern>
 
-<!-- Typing clipPaths -->
-<clipPath id="cPrompt"><rect x="48" y="48" width="0" height="32"><animate attributeName="width" from="0" to="520" dur="1s" begin=".3s" fill="freeze"/></rect></clipPath>
-<clipPath id="cHi"><rect x="48" y="86" width="0" height="42"><animate attributeName="width" from="0" to="240" dur=".5s" begin="1.2s" fill="freeze"/></rect></clipPath>
-<clipPath id="q1"><rect x="76" y="258" width="0" height="46"><animate attributeName="width" from="0" to="440" dur=".7s" begin="3.4s" fill="freeze"/></rect></clipPath>
-<clipPath id="q2"><rect x="76" y="284" width="0" height="46"><animate attributeName="width" from="0" to="440" dur=".6s" begin="4.2s" fill="freeze"/></rect></clipPath>
-
 <!-- Cycling roles: 4 roles, 24s -->
-<clipPath id="r1"><rect x="48" y="216" width="0" height="36"><animate attributeName="width" values="0;0;460;460;0;0" keyTimes="0;.01;.07;.2;.24;1" dur="24s" repeatCount="indefinite" begin="2.9s"/></rect></clipPath>
-<clipPath id="r2"><rect x="48" y="216" width="0" height="36"><animate attributeName="width" values="0;0;460;460;0;0" keyTimes="0;.26;.32;.45;.49;1" dur="24s" repeatCount="indefinite" begin="2.9s"/></rect></clipPath>
-<clipPath id="r3"><rect x="48" y="216" width="0" height="36"><animate attributeName="width" values="0;0;460;460;0;0" keyTimes="0;.51;.57;.7;.74;1" dur="24s" repeatCount="indefinite" begin="2.9s"/></rect></clipPath>
-<clipPath id="r4"><rect x="48" y="216" width="0" height="36"><animate attributeName="width" values="0;0;460;460;0;0" keyTimes="0;.76;.82;.95;.99;1" dur="24s" repeatCount="indefinite" begin="2.9s"/></rect></clipPath>
+<clipPath id="r1"><rect x="48" y="214" width="0" height="36"><animate attributeName="width" values="0;0;580;580;0;0" keyTimes="0;.01;.07;.2;.24;1" dur="24s" repeatCount="indefinite" begin="0.5s"/></rect></clipPath>
+<clipPath id="r2"><rect x="48" y="214" width="0" height="36"><animate attributeName="width" values="0;0;580;580;0;0" keyTimes="0;.26;.32;.45;.49;1" dur="24s" repeatCount="indefinite" begin="0.5s"/></rect></clipPath>
+<clipPath id="r3"><rect x="48" y="214" width="0" height="36"><animate attributeName="width" values="0;0;580;580;0;0" keyTimes="0;.51;.57;.7;.74;1" dur="24s" repeatCount="indefinite" begin="0.5s"/></rect></clipPath>
+<clipPath id="r4"><rect x="48" y="214" width="0" height="36"><animate attributeName="width" values="0;0;580;580;0;0" keyTimes="0;.76;.82;.95;.99;1" dur="24s" repeatCount="indefinite" begin="0.5s"/></rect></clipPath>
 </defs>
 
 <!-- ================= BACKGROUND ================= -->
@@ -87,145 +75,145 @@ text{font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,-apple-system
 
 <!-- ================= LEFT: CONTENT ================= -->
 <!-- Terminal Prompt -->
-<text clip-path="url(#cPrompt)" x="48" y="69" font-size="14"><tspan fill="#4ade80" font-weight="bold">david@architecture</tspan><tspan fill="#94a3b8">:~$ </tspan><tspan fill="#f1f5f9">cat </tspan><tspan fill="#38bdf8" font-weight="bold">profile.md</tspan></text>
-<rect x="440" y="56" width="8" height="16" fill="#4ade80" opacity="0"><animate attributeName="opacity" values="1;0" dur="1s" repeatCount="indefinite" begin="1.35s"/></rect>
+<text x="48" y="69" font-size="14"><tspan fill="#4ade80" font-weight="bold">david@architecture</tspan><tspan fill="#94a3b8">:~$ </tspan><tspan fill="#f1f5f9">cat </tspan><tspan fill="#38bdf8" font-weight="bold">profile.md</tspan></text>
+<rect x="420" y="56" width="8" height="16" fill="#4ade80" opacity="0"><animate attributeName="opacity" values="1;0" dur="1s" repeatCount="indefinite"/></rect>
 
 <!-- Hi, I'm -->
-<text clip-path="url(#cHi)" x="48" y="114" font-size="24" font-weight="bold" fill="#f8fafc">Hi, I'm 👋</text>
+<text x="48" y="114" font-size="22" font-weight="bold" fill="#94a3b8">Hi, I'm 👋</text>
 
-<!-- Name: David HE (Animated gradient & pop-in) -->
-<g transform="translate(48,185)" fill="url(#nameg)" filter="url(#glow)">
-  <text x="0" y="0" font-size="52" font-weight="900" letter-spacing="1.5">David HE</text>
+<!-- Name: David HE -->
+<g transform="translate(48,175)" fill="url(#nameg)" filter="url(#glow)">
+  <text x="0" y="0" font-size="50" font-weight="900" letter-spacing="1">David HE</text>
 </g>
-<g class="tw" style="animation-delay:3s"><path d="M330 148l3 8 8 3-8 3-3 8-3-8-8-3 8-3z" fill="#38bdf8"/></g>
+<g class="tw" style="animation-delay:2s"><path d="M310 140l3 8 8 3-8 3-3 8-3-8-8-3 8-3z" fill="#38bdf8"/></g>
 
 <!-- Cycling Roles -->
-<text clip-path="url(#r1)" x="48" y="238" font-size="17" font-weight="700" fill="#38bdf8" filter="url(#glow)">&lt; Full-Stack Developer /&gt;</text>
-<text clip-path="url(#r2)" x="48" y="238" font-size="17" font-weight="700" fill="#818cf8" filter="url(#glow)">&lt; Scalable Backend Architect (.NET &amp; Python) /&gt;</text>
-<text clip-path="url(#r3)" x="48" y="238" font-size="17" font-weight="700" fill="#c084fc" filter="url(#glow)">&lt; AI Engineer (PyTorch &amp; TensorFlow) /&gt;</text>
-<text clip-path="url(#r4)" x="48" y="238" font-size="17" font-weight="700" fill="#38bdf8" filter="url(#glow)">&lt; High-Performance Systems Designer /&gt;</text>
-<rect x="48" y="224" width="2.5" height="17" fill="#38bdf8" opacity="0"><animate attributeName="opacity" values="1;0" dur=".8s" repeatCount="indefinite" begin="2.9s"/></rect>
+<text clip-path="url(#r1)" x="48" y="236" font-size="16.5" font-weight="700" fill="#38bdf8" filter="url(#glow)">&lt; Full-Stack Developer /&gt;</text>
+<text clip-path="url(#r2)" x="48" y="236" font-size="16.5" font-weight="700" fill="#818cf8" filter="url(#glow)">&lt; Scalable Backend Architect (.NET &amp; Python) /&gt;</text>
+<text clip-path="url(#r3)" x="48" y="236" font-size="16.5" font-weight="700" fill="#c084fc" filter="url(#glow)">&lt; AI Engineer (PyTorch &amp; TensorFlow) /&gt;</text>
+<text clip-path="url(#r4)" x="48" y="236" font-size="16.5" font-weight="700" fill="#38bdf8" filter="url(#glow)">&lt; High-Performance Systems Designer /&gt;</text>
+<rect x="48" y="222" width="2.5" height="17" fill="#38bdf8" opacity="0"><animate attributeName="opacity" values="1;0" dur=".8s" repeatCount="indefinite"/></rect>
 
 <!-- Quote Box -->
-<g class="cl" style="animation:fadeIn .5s ease 3.2s forwards">
-  <rect x="48" y="260" width="480" height="68" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1"/>
-  <rect x="48" y="264" width="4" height="60" rx="2" fill="#38bdf8"/>
+<g>
+  <rect x="48" y="258" width="540" height="64" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+  <rect x="48" y="262" width="4" height="56" rx="2" fill="#38bdf8"/>
+  <text x="70" y="285" font-size="14" fill="#f1f5f9" font-weight="600">Discipline over motivation.</text>
+  <text x="70" y="308" font-size="14"><tspan fill="#94a3b8">Systems over </tspan><tspan fill="#38bdf8" font-weight="bold">shortcuts.</tspan></text>
 </g>
-<text clip-path="url(#q1)" x="74" y="288" font-size="14.5" fill="#f1f5f9" font-weight="600">Discipline over motivation.</text>
-<text clip-path="url(#q2)" x="74" y="312" font-size="14.5"><tspan fill="#94a3b8">Systems over </tspan><tspan fill="#38bdf8" font-weight="bold">shortcuts.</tspan></text>
 
 <!-- Tech I Work With (Pills) -->
-<text class="ii" x="48" y="364" font-size="15" fill="#38bdf8" font-weight="bold" style="animation:fadeIn .4s ease 4.5s forwards">⚡ Core Stack &amp; Tech</text>
+<text x="48" y="354" font-size="14.5" fill="#38bdf8" font-weight="bold">⚡ Core Stack &amp; Tech</text>
 
-<g class="pill" style="animation:fadeIn .3s ease 4.7s forwards"><rect x="48" y="378" width="60" height="26" rx="13" fill="rgba(81,43,212,0.18)" stroke="#818cf8" stroke-width="1"/><text x="78" y="395" text-anchor="middle" font-size="12" fill="#c4b5fd" font-weight="bold">C#</text></g>
-<g class="pill" style="animation:fadeIn .3s ease 4.8s forwards"><rect x="114" y="378" width="120" height="26" rx="13" fill="rgba(92,45,145,0.18)" stroke="#a855f7" stroke-width="1"/><text x="174" y="395" text-anchor="middle" font-size="12" fill="#e9d5ff" font-weight="bold">ASP.NET Core</text></g>
-<g class="pill" style="animation:fadeIn .3s ease 4.9s forwards"><rect x="240" y="378" width="86" height="26" rx="13" fill="rgba(56,189,248,0.15)" stroke="#38bdf8" stroke-width="1"/><text x="283" y="395" text-anchor="middle" font-size="12" fill="#7dd3fc" font-weight="bold">Python</text></g>
-<g class="pill" style="animation:fadeIn .3s ease 5.0s forwards"><rect x="332" y="378" width="94" height="26" rx="13" fill="rgba(238,76,44,0.15)" stroke="#f97316" stroke-width="1"/><text x="379" y="395" text-anchor="middle" font-size="12" fill="#fdba74" font-weight="bold">PyTorch</text></g>
-<g class="pill" style="animation:fadeIn .3s ease 5.1s forwards"><rect x="432" y="378" width="110" height="26" rx="13" fill="rgba(255,153,0,0.15)" stroke="#f59e0b" stroke-width="1"/><text x="487" y="395" text-anchor="middle" font-size="12" fill="#fcd34d" font-weight="bold">TensorFlow</text></g>
+<g class="pill"><rect x="48" y="368" width="54" height="26" rx="13" fill="rgba(81,43,212,0.2)" stroke="#818cf8" stroke-width="1"/><text x="75" y="385" text-anchor="middle" font-size="11.5" fill="#c4b5fd" font-weight="bold">C#</text></g>
+<g class="pill"><rect x="108" y="368" width="114" height="26" rx="13" fill="rgba(92,45,145,0.2)" stroke="#a855f7" stroke-width="1"/><text x="165" y="385" text-anchor="middle" font-size="11.5" fill="#e9d5ff" font-weight="bold">ASP.NET Core</text></g>
+<g class="pill"><rect x="228" y="368" width="80" height="26" rx="13" fill="rgba(56,189,248,0.18)" stroke="#38bdf8" stroke-width="1"/><text x="268" y="385" text-anchor="middle" font-size="11.5" fill="#7dd3fc" font-weight="bold">Python</text></g>
+<g class="pill"><rect x="314" y="368" width="88" height="26" rx="13" fill="rgba(238,76,44,0.18)" stroke="#f97316" stroke-width="1"/><text x="358" y="385" text-anchor="middle" font-size="11.5" fill="#fdba74" font-weight="bold">PyTorch</text></g>
+<g class="pill"><rect x="408" y="368" width="104" height="26" rx="13" fill="rgba(255,153,0,0.18)" stroke="#f59e0b" stroke-width="1"/><text x="460" y="385" text-anchor="middle" font-size="11.5" fill="#fcd34d" font-weight="bold">TensorFlow</text></g>
 
-<g class="pill" style="animation:fadeIn .3s ease 5.2s forwards"><rect x="48" y="412" width="68" height="26" rx="13" fill="rgba(0,117,143,0.18)" stroke="#0ea5e9" stroke-width="1"/><text x="82" y="429" text-anchor="middle" font-size="12" fill="#7dd3fc" font-weight="bold">SQL</text></g>
-<g class="pill" style="animation:fadeIn .3s ease 5.3s forwards"><rect x="122" y="412" width="96" height="26" rx="13" fill="rgba(77,179,61,0.16)" stroke="#22c55e" stroke-width="1"/><text x="170" y="429" text-anchor="middle" font-size="12" fill="#86efac" font-weight="bold">MongoDB</text></g>
-<g class="pill" style="animation:fadeIn .3s ease 5.4s forwards"><rect x="224" y="412" width="80" height="26" rx="13" fill="rgba(36,150,237,0.18)" stroke="#38bdf8" stroke-width="1"/><text x="264" y="429" text-anchor="middle" font-size="12" fill="#93c5fd" font-weight="bold">Docker</text></g>
-<g class="pill" style="animation:fadeIn .3s ease 5.5s forwards"><rect x="310" y="412" width="144" height="26" rx="13" fill="rgba(192,132,252,0.15)" stroke="#c084fc" stroke-width="1"/><text x="382" y="429" text-anchor="middle" font-size="12" fill="#f5d0fe" font-weight="bold">System Design</text></g>
-<g class="pill" style="animation:fadeIn .3s ease 5.6s forwards"><rect x="460" y="412" width="116" height="26" rx="13" fill="rgba(74,222,128,0.15)" stroke="#4ade80" stroke-width="1"/><text x="518" y="429" text-anchor="middle" font-size="12" fill="#bbf7d0" font-weight="bold">AI Integration</text></g>
+<g class="pill"><rect x="48" y="402" width="60" height="26" rx="13" fill="rgba(0,117,143,0.2)" stroke="#0ea5e9" stroke-width="1"/><text x="78" y="419" text-anchor="middle" font-size="11.5" fill="#7dd3fc" font-weight="bold">SQL</text></g>
+<g class="pill"><rect x="114" y="402" width="90" height="26" rx="13" fill="rgba(77,179,61,0.18)" stroke="#22c55e" stroke-width="1"/><text x="159" y="419" text-anchor="middle" font-size="11.5" fill="#86efac" font-weight="bold">MongoDB</text></g>
+<g class="pill"><rect x="210" y="402" width="76" height="26" rx="13" fill="rgba(36,150,237,0.2)" stroke="#38bdf8" stroke-width="1"/><text x="248" y="419" text-anchor="middle" font-size="11.5" fill="#93c5fd" font-weight="bold">Docker</text></g>
+<g class="pill"><rect x="292" y="402" width="132" height="26" rx="13" fill="rgba(192,132,252,0.18)" stroke="#c084fc" stroke-width="1"/><text x="358" y="419" text-anchor="middle" font-size="11.5" fill="#f5d0fe" font-weight="bold">System Design</text></g>
+<g class="pill"><rect x="430" y="402" width="124" height="26" rx="13" fill="rgba(74,222,128,0.18)" stroke="#4ade80" stroke-width="1"/><text x="492" y="419" text-anchor="middle" font-size="11.5" fill="#bbf7d0" font-weight="bold">AI Integration</text></g>
 
 <!-- About Me Lines -->
-<text class="ii" x="48" y="478" font-size="15" fill="#818cf8" font-weight="bold" style="animation:fadeIn .4s ease 5.8s forwards">🚀 About Me</text>
-<text class="ii" x="48" y="504" font-size="13.5" style="animation:fadeIn .4s ease 6.0s forwards"><tspan fill="#4ade80">&gt;_ </tspan><tspan fill="#cbd5e1">Building scalable backend systems &amp; intelligent applications.</tspan></text>
-<text class="ii" x="48" y="528" font-size="13.5" style="animation:fadeIn .4s ease 6.2s forwards"><tspan fill="#38bdf8">💡 </tspan><tspan fill="#cbd5e1">Focus on clean architecture, performance, and long-term thinking.</tspan></text>
-<text class="ii" x="48" y="552" font-size="13.5" style="animation:fadeIn .4s ease 6.4s forwards"><tspan fill="#f59e0b">⚡ </tspan><tspan fill="#cbd5e1">If it can be optimized, automated, or made smarter — I'm in.</tspan></text>
+<text x="48" y="464" font-size="14.5" fill="#818cf8" font-weight="bold">🚀 About Me</text>
+<text x="48" y="488" font-size="13"><tspan fill="#4ade80">&gt;_ </tspan><tspan fill="#cbd5e1">Building scalable backend systems &amp; intelligent applications.</tspan></text>
+<text x="48" y="512" font-size="13"><tspan fill="#38bdf8">💡 </tspan><tspan fill="#cbd5e1">Focus on clean architecture, performance, and long-term thinking.</tspan></text>
+<text x="48" y="536" font-size="13"><tspan fill="#f59e0b">⚡ </tspan><tspan fill="#cbd5e1">If it can be optimized, automated, or made smarter — I'm in.</tspan></text>
 
 <!-- Bottom Stats / Focus Bar -->
-<g class="st" style="animation:fadeIn .5s ease 6.6s forwards">
-  <rect x="48" y="586" width="580" height="66" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1"/>
-  <line x1="193" y1="598" x2="193" y2="640" class="sep"/>
-  <line x1="338" y1="598" x2="338" y2="640" class="sep"/>
-  <line x1="483" y1="598" x2="483" y2="640" class="sep"/>
+<g>
+  <rect x="48" y="576" width="580" height="66" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+  <line x1="193" y1="588" x2="193" y2="630" class="sep"/>
+  <line x1="338" y1="588" x2="338" y2="630" class="sep"/>
+  <line x1="483" y1="588" x2="483" y2="630" class="sep"/>
 
-  <text x="120" y="612" text-anchor="middle" font-size="11" fill="#94a3b8">🏗️ Architecture</text>
-  <text x="265" y="612" text-anchor="middle" font-size="11" fill="#94a3b8">⚙️ Backend</text>
-  <text x="410" y="612" text-anchor="middle" font-size="11" fill="#94a3b8">🧠 AI / Models</text>
-  <text x="532" y="612" text-anchor="middle" font-size="11" fill="#94a3b8">🚀 Performance</text>
+  <text x="120" y="602" text-anchor="middle" font-size="11" fill="#94a3b8">🏗️ Architecture</text>
+  <text x="265" y="602" text-anchor="middle" font-size="11" fill="#94a3b8">⚙️ Backend</text>
+  <text x="410" y="602" text-anchor="middle" font-size="11" fill="#94a3b8">🧠 AI / Models</text>
+  <text x="532" y="602" text-anchor="middle" font-size="11" fill="#94a3b8">🚀 Performance</text>
 
-  <text x="120" y="640" text-anchor="middle" font-size="15" font-weight="bold" fill="#38bdf8" filter="url(#glow)">Clean &amp; Scalable</text>
-  <text x="265" y="640" text-anchor="middle" font-size="15" font-weight="bold" fill="#818cf8" filter="url(#glow)">.NET &amp; Python</text>
-  <text x="410" y="640" text-anchor="middle" font-size="15" font-weight="bold" fill="#c084fc" filter="url(#glow)">PyTorch / TF</text>
-  <text x="532" y="640" text-anchor="middle" font-size="15" font-weight="bold" fill="#4ade80" filter="url(#glow)">Optimized</text>
+  <text x="120" y="630" text-anchor="middle" font-size="14.5" font-weight="bold" fill="#38bdf8" filter="url(#glow)">Clean &amp; Scalable</text>
+  <text x="265" y="630" text-anchor="middle" font-size="14.5" font-weight="bold" fill="#818cf8" filter="url(#glow)">.NET &amp; Python</text>
+  <text x="410" y="630" text-anchor="middle" font-size="14.5" font-weight="bold" fill="#c084fc" filter="url(#glow)">PyTorch / TF</text>
+  <text x="532" y="630" text-anchor="middle" font-size="14.5" font-weight="bold" fill="#4ade80" filter="url(#glow)">Optimized</text>
 </g>
 
 <!-- ================= RIGHT: FUTURISTIC TECH GRAPHIC ================= -->
-<g transform="translate(930,360)" class="fl">
+<g transform="translate(930,355)" class="fl">
   <!-- Glowing circle base -->
-  <circle cx="0" cy="0" r="230" fill="url(#cyberGlow)"><animate attributeName="r" values="230;255;230" dur="5s" repeatCount="indefinite"/></circle>
+  <circle cx="0" cy="0" r="220" fill="url(#cyberGlow)"><animate attributeName="r" values="220;240;220" dur="5s" repeatCount="indefinite"/></circle>
   
   <!-- Outer rotating HUD rings -->
-  <circle cx="0" cy="0" r="210" fill="none" stroke="#38bdf8" stroke-opacity=".2" stroke-width="1.5" stroke-dasharray="14 10"/>
-  <circle cx="0" cy="0" r="185" fill="none" stroke="#818cf8" stroke-opacity=".3" stroke-width="2" stroke-dasharray="30 20 10 20"/>
-  <circle cx="0" cy="0" r="160" fill="none" stroke="#c084fc" stroke-opacity=".25" stroke-width="1" stroke-dasharray="6 6"/>
+  <circle cx="0" cy="0" r="200" fill="none" stroke="#38bdf8" stroke-opacity=".2" stroke-width="1.5" stroke-dasharray="14 10"/>
+  <circle cx="0" cy="0" r="180" fill="none" stroke="#818cf8" stroke-opacity=".3" stroke-width="2" stroke-dasharray="30 20 10 20"/>
+  <circle cx="0" cy="0" r="155" fill="none" stroke="#c084fc" stroke-opacity=".25" stroke-width="1" stroke-dasharray="6 6"/>
 
   <!-- Center Card: IDE / Architecture Window -->
-  <g transform="translate(-160,-170)">
+  <g transform="translate(-160,-165)">
     <!-- Window Frame -->
-    <rect x="0" y="0" width="320" height="340" rx="16" fill="#0b1120" stroke="url(#borderg)" stroke-width="1.8" filter="url(#glow)"/>
+    <rect x="0" y="0" width="320" height="330" rx="16" fill="#0b1120" stroke="url(#borderg)" stroke-width="1.8" filter="url(#glow)"/>
     
     <!-- Titlebar -->
-    <rect x="0" y="0" width="320" height="36" rx="16" fill="#1e293b"/>
-    <circle cx="20" cy="18" r="5" fill="#f87171"/>
-    <circle cx="36" cy="18" r="5" fill="#fbbf24"/>
-    <circle cx="52" cy="18" r="5" fill="#4ade80"/>
-    <text x="160" y="23" text-anchor="middle" font-size="11" font-weight="bold" fill="#94a3b8">architecture_core.cs</text>
+    <rect x="0" y="0" width="320" height="34" rx="16" fill="#1e293b"/>
+    <circle cx="18" cy="17" r="4.5" fill="#f87171"/>
+    <circle cx="32" cy="17" r="4.5" fill="#fbbf24"/>
+    <circle cx="46" cy="17" r="4.5" fill="#4ade80"/>
+    <text x="160" y="22" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#94a3b8">architecture_core.cs</text>
 
     <!-- Code Editor Content -->
-    <g transform="translate(20,60)">
-      <text x="0" y="0" font-size="11" fill="#818cf8"><tspan fill="#c084fc">public class </tspan><tspan fill="#38bdf8" font-weight="bold">SystemEngine</tspan></text>
-      <text x="0" y="20" font-size="11" fill="#94a3b8">{</text>
+    <g transform="translate(18,55)">
+      <text x="0" y="0" font-size="10.5" fill="#818cf8"><tspan fill="#c084fc">public class </tspan><tspan fill="#38bdf8" font-weight="bold">SystemEngine</tspan></text>
+      <text x="0" y="18" font-size="10.5" fill="#94a3b8">{</text>
       
-      <text x="16" y="40" font-size="10.5" fill="#64748b">// Initialize AI &amp; Backend</text>
-      <text x="16" y="58" font-size="10.5"><tspan fill="#c084fc">private readonly </tspan><tspan fill="#38bdf8">IAiModel </tspan><tspan fill="#f1f5f9">_model;</tspan></text>
-      <text x="16" y="76" font-size="10.5"><tspan fill="#c084fc">private readonly </tspan><tspan fill="#38bdf8">IDbContext </tspan><tspan fill="#f1f5f9">_db;</tspan></text>
+      <text x="14" y="36" font-size="10" fill="#64748b">// Initialize AI &amp; Backend</text>
+      <text x="14" y="54" font-size="10"><tspan fill="#c084fc">private readonly </tspan><tspan fill="#38bdf8">IAiModel </tspan><tspan fill="#f1f5f9">_model;</tspan></text>
+      <text x="14" y="72" font-size="10"><tspan fill="#c084fc">private readonly </tspan><tspan fill="#38bdf8">IDbContext </tspan><tspan fill="#f1f5f9">_db;</tspan></text>
 
-      <text x="16" y="104" font-size="10.5"><tspan fill="#c084fc">public async </tspan><tspan fill="#38bdf8">Task </tspan><tspan fill="#4ade80">ExecuteAsync</tspan><tspan fill="#f1f5f9">()</tspan></text>
-      <text x="16" y="122" font-size="10.5" fill="#94a3b8">{</text>
+      <text x="14" y="98" font-size="10"><tspan fill="#c084fc">public async </tspan><tspan fill="#38bdf8">Task </tspan><tspan fill="#4ade80">ExecuteAsync</tspan><tspan fill="#f1f5f9">()</tspan></text>
+      <text x="14" y="116" font-size="10" fill="#94a3b8">{</text>
       
-      <text x="32" y="142" font-size="10.5"><tspan fill="#c084fc">await </tspan><tspan fill="#f1f5f9">_model.</tspan><tspan fill="#818cf8">InferAsync</tspan><tspan fill="#f1f5f9">();</tspan></text>
-      <text x="32" y="160" font-size="10.5"><tspan fill="#c084fc">await </tspan><tspan fill="#f1f5f9">_db.</tspan><tspan fill="#818cf8">SaveChangesAsync</tspan><tspan fill="#f1f5f9">();</tspan></text>
-      <text x="32" y="180" font-size="10.5"><tspan fill="#38bdf8">Log.</tspan><tspan fill="#4ade80">Success</tspan><tspan fill="#f1f5f9">(</tspan><tspan fill="#fbbf24">"Status: 200 OK"</tspan><tspan fill="#f1f5f9">);</tspan></text>
+      <text x="28" y="134" font-size="10"><tspan fill="#c084fc">await </tspan><tspan fill="#f1f5f9">_model.</tspan><tspan fill="#818cf8">InferAsync</tspan><tspan fill="#f1f5f9">();</tspan></text>
+      <text x="28" y="152" font-size="10"><tspan fill="#c084fc">await </tspan><tspan fill="#f1f5f9">_db.</tspan><tspan fill="#818cf8">SaveChangesAsync</tspan><tspan fill="#f1f5f9">();</tspan></text>
+      <text x="28" y="170" font-size="10"><tspan fill="#38bdf8">Log.</tspan><tspan fill="#4ade80">Success</tspan><tspan fill="#f1f5f9">(</tspan><tspan fill="#fbbf24">"Status: 200 OK"</tspan><tspan fill="#f1f5f9">);</tspan></text>
 
-      <text x="16" y="200" font-size="10.5" fill="#94a3b8">}</text>
-      <text x="0" y="220" font-size="11" fill="#94a3b8">}</text>
+      <text x="14" y="188" font-size="10" fill="#94a3b8">}</text>
+      <text x="0" y="206" font-size="10.5" fill="#94a3b8">}</text>
     </g>
 
     <!-- Mini Server & Node Flow in window bottom -->
-    <g transform="translate(20,295)">
+    <g transform="translate(18,285)">
       <rect x="0" y="0" width="80" height="24" rx="6" fill="#1e1b4b" stroke="#818cf8" stroke-width="1"/>
-      <text x="40" y="16" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#818cf8">API GATEWAY</text>
+      <text x="40" y="16" text-anchor="middle" font-size="9" font-weight="bold" fill="#818cf8">API GATEWAY</text>
 
       <line x1="80" y1="12" x2="100" y2="12" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="3 2"/>
 
       <rect x="100" y="0" width="80" height="24" rx="6" fill="#0f2b3e" stroke="#38bdf8" stroke-width="1"/>
-      <text x="140" y="16" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#38bdf8">AI SERVICE</text>
+      <text x="140" y="16" text-anchor="middle" font-size="9" font-weight="bold" fill="#38bdf8">AI SERVICE</text>
 
       <line x1="180" y1="12" x2="200" y2="12" stroke="#4ade80" stroke-width="1.5" stroke-dasharray="3 2"/>
 
       <rect x="200" y="0" width="80" height="24" rx="6" fill="#0f2f1a" stroke="#4ade80" stroke-width="1"/>
-      <text x="240" y="16" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#4ade80">DATABASE</text>
+      <text x="240" y="16" text-anchor="middle" font-size="9" font-weight="bold" fill="#4ade80">DATABASE</text>
     </g>
   </g>
 
-  <!-- Floating Floating Tech Badges around window -->
-  <g class="fl2" transform="translate(140,-130)">
-    <rect x="0" y="0" width="84" height="30" rx="8" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5" filter="url(#glow)"/>
-    <text x="42" y="19" text-anchor="middle" font-size="11" font-weight="bold" fill="#38bdf8">⚡ C# .NET</text>
+  <!-- Floating Tech Badges around window -->
+  <g class="fl2" transform="translate(130,-130)">
+    <rect x="0" y="0" width="80" height="28" rx="8" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5" filter="url(#glow)"/>
+    <text x="40" y="18" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#38bdf8">⚡ C# .NET</text>
   </g>
   
-  <g class="fl2" transform="translate(-200,120)">
-    <rect x="0" y="0" width="96" height="30" rx="8" fill="#0f172a" stroke="#818cf8" stroke-width="1.5" filter="url(#glow)"/>
-    <text x="48" y="19" text-anchor="middle" font-size="11" font-weight="bold" fill="#818cf8">🧠 PyTorch</text>
+  <g class="fl2" transform="translate(-180,120)">
+    <rect x="0" y="0" width="90" height="28" rx="8" fill="#0f172a" stroke="#818cf8" stroke-width="1.5" filter="url(#glow)"/>
+    <text x="45" y="18" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#818cf8">🧠 PyTorch</text>
   </g>
 
-  <g class="fl2" transform="translate(130,130)">
-    <rect x="0" y="0" width="94" height="30" rx="8" fill="#0f172a" stroke="#4ade80" stroke-width="1.5" filter="url(#glow)"/>
-    <text x="47" y="19" text-anchor="middle" font-size="11" font-weight="bold" fill="#4ade80">🚀 Microservices</text>
+  <g class="fl2" transform="translate(120,130)">
+    <rect x="0" y="0" width="94" height="28" rx="8" fill="#0f172a" stroke="#4ade80" stroke-width="1.5" filter="url(#glow)"/>
+    <text x="47" y="18" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#4ade80">🚀 Scalability</text>
   </g>
 </g>
 </svg>

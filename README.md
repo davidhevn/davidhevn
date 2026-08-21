@@ -2,9 +2,9 @@
 
 <!-- ✨ Animated Futuristic Banner (Dark / Light support) ✨ -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./david-banner.svg?v=1">
-  <source media="(prefers-color-scheme: light)" srcset="./david-banner-light.svg?v=1">
-  <img src="./david-banner.svg?v=1" alt="David HE — Full-Stack &amp; AI Architect" width="100%"/>
+  <source media="(prefers-color-scheme: dark)" srcset="./david-banner.svg?v=2">
+  <source media="(prefers-color-scheme: light)" srcset="./david-banner-light.svg?v=2">
+  <img src="./david-banner.svg?v=2" alt="David HE — Full-Stack &amp; AI Architect" width="100%"/>
 </picture>
 
 </div>
@@ -13,23 +13,23 @@
 
 <table align="center" border="0">
 <tr>
-<td width="38%" align="center" valign="middle">
+<td width="36%" align="center" valign="middle">
 
 <!-- 🪪 Swinging Lanyard ID Card (Pure SVG with realistic physics animation) -->
-<img src="./david-lanyard.svg?v=1" alt="David HE ID badge" width="330"/>
+<img src="./david-lanyard.svg?v=2" alt="David HE ID badge" width="300"/>
 
 </td>
-<td width="62%" valign="middle">
+<td width="64%" valign="middle">
 
-### ⚡ Core Focus & Architecture
+### ⚡ Core Focus &amp; Architecture
 
-| 🚀 Domain | 💻 Tech Stack | 🎯 Focus |
-|:---|:---:|:---|
-| 🏗️ **Backend Architecture** | `C#` `.NET Core` `Clean Arch` | Scalable Microservices & High-Throughput APIs |
-| 🧠 **AI & Deep Learning** | `Python` `PyTorch` `TensorFlow` | Real-World Model Integration & Inference |
-| 🗄️ **Data Systems** | `SQL Server` `MongoDB` `Redis` | Optimized Indexing & Schema Design |
-| 🐳 **DevOps & Cloud** | `Docker` `CI/CD` `Linux` | Automated Deployments & Containerization |
-| ⚡ **System Optimization** | `Algorithms` `Async/Await` | Low-Latency & Resource Efficiency |
+| 🚀 Focus Area | 🛠️ Core Technologies |
+|:---|:---|
+| 🏗️ **Backend Architecture** | `C#` `ASP.NET Core` `Clean Arch` |
+| 🧠 **AI &amp; Deep Learning** | `Python` `PyTorch` `TensorFlow` |
+| 🗄️ **Data Architecture** | `SQL Server` `MongoDB` `Redis` |
+| 🐳 **Cloud &amp; DevOps** | `Docker` `CI/CD` `Linux` |
+| ⚡ **System Optimization** | `High Concurrency` `Low Latency` |
 
 <br/>
 
@@ -43,10 +43,10 @@
 
 <div align="center">
 
-### 📊 Engineering Stats & Performance
+### 📊 Engineering Stats &amp; Performance
 
-<img src="./david-stats.svg?v=1" alt="GitHub Stats" height="185"/>
-<img src="./david-langs.svg?v=1" alt="Top Languages" height="185"/>
+<img src="./david-stats.svg?v=2" alt="GitHub Stats" height="185"/>
+<img src="./david-langs.svg?v=2" alt="Top Languages" height="185"/>
 
 <br/><br/>
 
@@ -61,7 +61,7 @@
 <br/><br/>
 
 <!-- 🏆 Trophies (Local animated SVG) -->
-<img src="./david-trophies.svg?v=1" alt="Trophies" width="95%"/>
+<img src="./david-trophies.svg?v=2" alt="Trophies" width="95%"/>
 
 <br/><br/>
 
