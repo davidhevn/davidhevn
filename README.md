@@ -54,11 +54,11 @@
 
 <br/><br/>
 
-[![GitHub Streak](https://streak-stats.demolab.com?user=davidhevn&theme=radical&hide_border=true&background=0f172a&ring=38bdf8&fire=818cf8&currStreakLabel=c084fc)](https://git.io/streak-stats)
+<img src="https://raw.githubusercontent.com/davidhevn/davidhevn/output/github-streak.svg" alt="GitHub Streak" width="90%"/>
 
 <br/><br/>
 
-[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=davidhevn&bg_color=0f172a&color=38bdf8&line=818cf8&point=c084fc&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+<img src="https://raw.githubusercontent.com/davidhevn/davidhevn/output/github-activity-graph.svg" alt="Activity Graph" width="90%"/>
 
 <br/><br/>
 
