@@ -1,0 +1,195 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 280" width="800" height="280">
+  <defs>
+    <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+    <linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="borderGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"><animate attributeName="stop-color" values="#38bdf8;#818cf8;#c084fc;#38bdf8" dur="6s" repeatCount="indefinite"/></stop>
+      <stop offset="100%"><animate attributeName="stop-color" values="#c084fc;#38bdf8;#818cf8;#c084fc" dur="6s" repeatCount="indefinite"/></stop>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect x="1" y="1" width="798" height="278" rx="14" fill="#0f172a" stroke="url(#borderGrad)" stroke-width="1.5"/>
+
+  <g transform="translate(50, 36)">
+    <text x="0" y="0" fill="#38bdf8" font-size="16" font-weight="bold" font-family="'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
+      📈 31-Day Activity Graph
+    </text>
+    <text x="720" y="0" text-anchor="end" fill="#94a3b8" font-size="12" font-family="Consolas, monospace">
+      <tspan fill="#38bdf8" font-weight="bold">1726</tspan> commits (31d) · <tspan fill="#818cf8" font-weight="bold">55.7</tspan>/day · Peak: <tspan fill="#c084fc" font-weight="bold">70</tspan>
+    </text>
+  </g>
+
+  
+      <line x1="50" y1="235" x2="770" y2="235" stroke="#1e293b" stroke-dasharray="3,3" stroke-width="1"/>
+      <text x="40" y="239" fill="#64748b" font-size="10" text-anchor="end" font-family="Consolas, monospace">0</text>
+    
+
+      <line x1="50" y1="195" x2="770" y2="195" stroke="#1e293b" stroke-dasharray="3,3" stroke-width="1"/>
+      <text x="40" y="199" fill="#64748b" font-size="10" text-anchor="end" font-family="Consolas, monospace">18</text>
+    
+
+      <line x1="50" y1="155" x2="770" y2="155" stroke="#1e293b" stroke-dasharray="3,3" stroke-width="1"/>
+      <text x="40" y="159" fill="#64748b" font-size="10" text-anchor="end" font-family="Consolas, monospace">35</text>
+    
+
+      <line x1="50" y1="115" x2="770" y2="115" stroke="#1e293b" stroke-dasharray="3,3" stroke-width="1"/>
+      <text x="40" y="119" fill="#64748b" font-size="10" text-anchor="end" font-family="Consolas, monospace">53</text>
+    
+
+      <line x1="50" y1="75" x2="770" y2="75" stroke="#1e293b" stroke-dasharray="3,3" stroke-width="1"/>
+      <text x="40" y="79" fill="#64748b" font-size="10" text-anchor="end" font-family="Consolas, monospace">70</text>
+    
+  <path d="M 50.0 129.9 C 54.0 122.6, 66.0 91.0, 74.0 86.4 C 82.0 81.9, 90.0 100.1, 98.0 102.4 C 106.0 104.7, 114.0 102.0, 122.0 100.1 C 130.0 98.2, 138.0 84.5, 146.0 91.0 C 154.0 97.5, 162.0 134.4, 170.0 139.0 C 178.0 143.6, 186.0 124.1, 194.0 118.4 C 202.0 112.7, 210.0 106.6, 218.0 104.7 C 226.0 102.8, 234.0 106.2, 242.0 107.0 C 250.0 107.8, 258.0 111.2, 266.0 109.3 C 274.0 107.4, 282.0 100.5, 290.0 95.6 C 298.0 90.6, 306.0 80.3, 314.0 79.6 C 322.0 78.8, 330.0 88.3, 338.0 91.0 C 346.0 93.7, 354.0 94.4, 362.0 95.6 C 370.0 96.7, 378.0 97.1, 386.0 97.9 C 394.0 98.6, 402.0 99.8, 410.0 100.1 C 418.0 100.5, 426.0 100.5, 434.0 100.1 C 442.0 99.8, 450.0 97.9, 458.0 97.9 C 466.0 97.9, 474.0 94.8, 482.0 100.1 C 490.0 105.5, 498.0 121.9, 506.0 129.9 C 514.0 137.9, 522.0 151.6, 530.0 148.1 C 538.0 144.7, 546.0 112.7, 554.0 109.3 C 562.0 105.9, 570.0 133.3, 578.0 127.6 C 586.0 121.9, 594.0 79.6, 602.0 75.0 C 610.0 70.4, 618.0 91.0, 626.0 100.1 C 634.0 109.3, 642.0 121.5, 650.0 129.9 C 658.0 138.2, 666.0 149.3, 674.0 150.4 C 682.0 151.6, 690.0 145.9, 698.0 136.7 C 706.0 127.6, 714.0 102.0, 722.0 95.6 C 730.0 89.1, 738.0 98.2, 746.0 97.9 C 754.0 97.5, 766.0 94.0, 770.0 93.3 L 770.0 235.0 L 50.0 235.0 Z" fill="url(#areaGrad)"/>
+  <path d="M 50.0 129.9 C 54.0 122.6, 66.0 91.0, 74.0 86.4 C 82.0 81.9, 90.0 100.1, 98.0 102.4 C 106.0 104.7, 114.0 102.0, 122.0 100.1 C 130.0 98.2, 138.0 84.5, 146.0 91.0 C 154.0 97.5, 162.0 134.4, 170.0 139.0 C 178.0 143.6, 186.0 124.1, 194.0 118.4 C 202.0 112.7, 210.0 106.6, 218.0 104.7 C 226.0 102.8, 234.0 106.2, 242.0 107.0 C 250.0 107.8, 258.0 111.2, 266.0 109.3 C 274.0 107.4, 282.0 100.5, 290.0 95.6 C 298.0 90.6, 306.0 80.3, 314.0 79.6 C 322.0 78.8, 330.0 88.3, 338.0 91.0 C 346.0 93.7, 354.0 94.4, 362.0 95.6 C 370.0 96.7, 378.0 97.1, 386.0 97.9 C 394.0 98.6, 402.0 99.8, 410.0 100.1 C 418.0 100.5, 426.0 100.5, 434.0 100.1 C 442.0 99.8, 450.0 97.9, 458.0 97.9 C 466.0 97.9, 474.0 94.8, 482.0 100.1 C 490.0 105.5, 498.0 121.9, 506.0 129.9 C 514.0 137.9, 522.0 151.6, 530.0 148.1 C 538.0 144.7, 546.0 112.7, 554.0 109.3 C 562.0 105.9, 570.0 133.3, 578.0 127.6 C 586.0 121.9, 594.0 79.6, 602.0 75.0 C 610.0 70.4, 618.0 91.0, 626.0 100.1 C 634.0 109.3, 642.0 121.5, 650.0 129.9 C 658.0 138.2, 666.0 149.3, 674.0 150.4 C 682.0 151.6, 690.0 145.9, 698.0 136.7 C 706.0 127.6, 714.0 102.0, 722.0 95.6 C 730.0 89.1, 738.0 98.2, 746.0 97.9 C 754.0 97.5, 766.0 94.0, 770.0 93.3" fill="none" stroke="url(#lineGrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+  
+      <circle cx="74.0" cy="86.4" r="4.5" fill="#38bdf8" stroke="#0f172a" stroke-width="2">
+        <animate attributeName="r" values="4;5.5;4" dur="2.5s" repeatCount="indefinite"/>
+      </circle>
+    
+
+      <circle cx="98.0" cy="102.4" r="4.5" fill="#38bdf8" stroke="#0f172a" stroke-width="2">
+        <animate attributeName="r" values="4;5.5;4" dur="2.5s" repeatCount="indefinite"/>
+      </circle>
+    
+
+      <circle cx="122.0" cy="100.1" r="4.5" fill="#38bdf8" stroke="#0f172a" stroke-width="2">
+        <animate attributeName="r" values="4;5.5;4" dur="2.5s" repeatCount="indefinite"/>
+      </circle>
+    
+
+      <circle cx="146.0" cy="91.0" r="4.5" fill="#38bdf8" stroke="#0f172a" stroke-width="2">
+        <animate attributeName="r" values="4;5.5;4" dur="2.5s" repeatCount="indefinite"/>
+      </circle>
+    
+
+      <circle cx="194.0" cy="118.4" r="4.5" fill="#38bdf8" stroke="#0f172a" stroke-width="2">
+        <animate attributeName="r" values="4;5.5;4" dur="2.5s" repeatCount="indefinite"/>
+      </circle>
+    
+
+      <circle cx="218.0" cy="104.7" r="4.5" fill="#38bdf8" stroke="#0f172a" stroke-width="2">
+        <animate attributeName="r" values="4;5.5;4" dur="2.5s" repeatCount="indefinite"/>
+      </circle>
+    
+
+      <circle cx="242.0" cy="107.0" r="4.5" fill="#38bdf8" stroke="#0f172a" stroke-width="2">
+        <animate attributeName="r" values="4;5.5;4" dur="2.5s" repeatCount="indefinite"/>
+      </circle>
+    
+
+      <circle cx="266.0" cy="109.3" r="4.5" fill="#38bdf8" stroke="#0f172a" stroke-width="2">
+        <animate attributeName="r" values="4;5.5;4" dur="2.5s" repeatCount="indefinite"/>
+      </circle>
+    
+
+      <circle cx="290.0" cy="95.6" r="4.5" fill="#38bdf8" stroke="#0f172a" stroke-width="2">
+        <animate attributeName="r" values="4;5.5;4" dur="2.5s" repeatCount="indefinite"/>
+      </circle>
+    
+
+      <circle cx="314.0" cy="79.6" r="4.5" fill="#38bdf8" stroke="#0f172a" stroke-width="2">
+        <animate attributeName="r" values="4;5.5;4" dur="2.5s" repeatCount="indefinite"/>
+      </circle>
+    
+
+      <circle cx="338.0" cy="91.0" r="4.5" fill="#38bdf8" stroke="#0f172a" stroke-width="2">
+        <animate attributeName="r" values="4;5.5;4" dur="2.5s" repeatCount="indefinite"/>
+      </circle>
+    
+
+      <circle cx="362.0" cy="95.6" r="4.5" fill="#38bdf8" stroke="#0f172a" stroke-width="2">
+        <animate attributeName="r" values="4;5.5;4" dur="2.5s" repeatCount="indefinite"/>
+      </circle>
+    
+
+      <circle cx="386.0" cy="97.9" r="4.5" fill="#38bdf8" stroke="#0f172a" stroke-width="2">
+        <animate attributeName="r" values="4;5.5;4" dur="2.5s" repeatCount="indefinite"/>
+      </circle>
+    
+
+      <circle cx="410.0" cy="100.1" r="4.5" fill="#38bdf8" stroke="#0f172a" stroke-width="2">
+        <animate attributeName="r" values="4;5.5;4" dur="2.5s" repeatCount="indefinite"/>
+      </circle>
+    
+
+      <circle cx="434.0" cy="100.1" r="4.5" fill="#38bdf8" stroke="#0f172a" stroke-width="2">
+        <animate attributeName="r" values="4;5.5;4" dur="2.5s" repeatCount="indefinite"/>
+      </circle>
+    
+
+      <circle cx="458.0" cy="97.9" r="4.5" fill="#38bdf8" stroke="#0f172a" stroke-width="2">
+        <animate attributeName="r" values="4;5.5;4" dur="2.5s" repeatCount="indefinite"/>
+      </circle>
+    
+
+      <circle cx="482.0" cy="100.1" r="4.5" fill="#38bdf8" stroke="#0f172a" stroke-width="2">
+        <animate attributeName="r" values="4;5.5;4" dur="2.5s" repeatCount="indefinite"/>
+      </circle>
+    
+
+      <circle cx="554.0" cy="109.3" r="4.5" fill="#38bdf8" stroke="#0f172a" stroke-width="2">
+        <animate attributeName="r" values="4;5.5;4" dur="2.5s" repeatCount="indefinite"/>
+      </circle>
+    
+
+      <circle cx="602.0" cy="75.0" r="4.5" fill="#38bdf8" stroke="#0f172a" stroke-width="2">
+        <animate attributeName="r" values="4;5.5;4" dur="2.5s" repeatCount="indefinite"/>
+      </circle>
+    
+
+      <circle cx="626.0" cy="100.1" r="4.5" fill="#38bdf8" stroke="#0f172a" stroke-width="2">
+        <animate attributeName="r" values="4;5.5;4" dur="2.5s" repeatCount="indefinite"/>
+      </circle>
+    
+
+      <circle cx="722.0" cy="95.6" r="4.5" fill="#38bdf8" stroke="#0f172a" stroke-width="2">
+        <animate attributeName="r" values="4;5.5;4" dur="2.5s" repeatCount="indefinite"/>
+      </circle>
+    
+
+      <circle cx="746.0" cy="97.9" r="4.5" fill="#38bdf8" stroke="#0f172a" stroke-width="2">
+        <animate attributeName="r" values="4;5.5;4" dur="2.5s" repeatCount="indefinite"/>
+      </circle>
+    
+
+      <circle cx="770.0" cy="93.3" r="4.5" fill="#38bdf8" stroke="#0f172a" stroke-width="2">
+        <animate attributeName="r" values="4;5.5;4" dur="2.5s" repeatCount="indefinite"/>
+      </circle>
+    
+  
+        <text x="50.0" y="255" fill="#64748b" font-size="10" text-anchor="middle" font-family="Consolas, monospace">09/03</text>
+      
+
+        <text x="170.0" y="255" fill="#64748b" font-size="10" text-anchor="middle" font-family="Consolas, monospace">09/08</text>
+      
+
+        <text x="290.0" y="255" fill="#64748b" font-size="10" text-anchor="middle" font-family="Consolas, monospace">09/13</text>
+      
+
+        <text x="410.0" y="255" fill="#64748b" font-size="10" text-anchor="middle" font-family="Consolas, monospace">09/18</text>
+      
+
+        <text x="530.0" y="255" fill="#64748b" font-size="10" text-anchor="middle" font-family="Consolas, monospace">09/23</text>
+      
+
+        <text x="650.0" y="255" fill="#64748b" font-size="10" text-anchor="middle" font-family="Consolas, monospace">09/28</text>
+      
+
+        <text x="770.0" y="255" fill="#64748b" font-size="10" text-anchor="middle" font-family="Consolas, monospace">10/03</text>
+      
+</svg>
